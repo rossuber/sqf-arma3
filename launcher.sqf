@@ -1,8 +1,10 @@
-/* launcher.sqf
+/* launcher.sqf - Use a vehicle to launch other vehicles or objects across the map!
 1. Add to init.sqf:		[] execVM "launcher.sqf";
 2. Create vehicle in the editor named "Sochor" on the Empty side/faction, preferably armored and tracked with a turret (for example the mobile artillery Sochor tank)
 3. Create vehicle in the editor named "Plutonium" on the Empty side/faction, preferably an emptied-out ammo box/crate
-4. Define which playable units can have access to the launcher in the array on line 7; use the names you gave them in the in-game editor */
+4. Define which playable units can have access to the launcher in the array on line 9; use the names you gave them in the in-game editor
+Watch the tutorial on usage here: https://www.youtube.com/watch?v=-ZZ7Vm_qLpU
+*/
 
 commanders_str = [ "a1", "b1", "cmd", "c1", "c2", "c3", "c4", "r1", "r2", "d1" ];
 is_cmd = ( vehicleVarName player ) in commanders_str;
